@@ -88,6 +88,7 @@ function makeSan(data, type, containerId) {
       .attr("offset", "100%")
       .attr("stop-color", (d) => color(d.target.name));
   }
+ 
 
   link
     .append("path")
@@ -207,5 +208,6 @@ function handle(data, type) {
   }
   return { nodes, links };
 }
+
 
 init();
